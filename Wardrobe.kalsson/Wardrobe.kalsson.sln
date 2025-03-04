@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardrobe.Client", "Wardrobe.Client\Wardrobe.Client.csproj", "{F044F218-323D-4FD5-A6D7-CC95D3F37061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardrobe.API", "Wardrobe.API\Wardrobe.API.csproj", "{DED5C131-CE2D-4DD8-B736-5A779689CB59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F044F218-323D-4FD5-A6D7-CC95D3F37061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F044F218-323D-4FD5-A6D7-CC95D3F37061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F044F218-323D-4FD5-A6D7-CC95D3F37061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F044F218-323D-4FD5-A6D7-CC95D3F37061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED5C131-CE2D-4DD8-B736-5A779689CB59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED5C131-CE2D-4DD8-B736-5A779689CB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED5C131-CE2D-4DD8-B736-5A779689CB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED5C131-CE2D-4DD8-B736-5A779689CB59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
