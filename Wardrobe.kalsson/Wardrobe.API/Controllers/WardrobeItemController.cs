@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Wardrobe.API.Repositories;
 using Wardrobe.Shared.Entities;
 
 namespace Wardrobe.API.Controllers
@@ -8,48 +9,23 @@ namespace Wardrobe.API.Controllers
     [ApiController]
     public class WardrobeItemController : ControllerBase
     {
-        private static List<WardrobeItem> _wardrobeItems = new List<WardrobeItem>
-        {
-            new WardrobeItem
-            {
-                Id = 1, 
-                Name = "Wardrobe Item 1", 
-                Description = "This is some description 1",
-                DateCreated = DateTime.Now.AddHours(1),
-                ImagePath = ""
-            },
-            new WardrobeItem
-            {
-                Id = 2,
-                Name = "Wardrobe Item 2",
-                Description = "This is some description 2",
-                DateCreated = DateTime.Now.AddHours(2),
-                ImagePath = ""
-            }
-        };
+        private readonly IWardrobeItemRepository _wardrobeItemRepository;
 
-        /// Retrieves a list of all wardrobe items.
-        /// <returns>
-        /// A list of all available wardrobe items.
-        /// </returns>
+        public WardrobeItemController(IWardrobeItemRepository wardrobeItemRepository)
+        {
+            _wardrobeItemRepository = wardrobeItemRepository;
+        }
+        
         [HttpGet]
         public ActionResult<List<WardrobeItem>> GetAllWardrobeItems()
         {
-            return Ok(_wardrobeItems);
+            return Ok(_wardrobeItemRepository.GetAllWardrobeItems());
         }
-
-        /// Adds a new wardrobe item to the collection.
-        /// <param name="wardrobeItem">
-        /// The wardrobe item to be added to the collection.
-        /// </param>
-        /// <returns>
-        /// The updated list of all wardrobe items including the newly added item.
-        /// </returns>
+        
         [HttpPost]
         public ActionResult<List<WardrobeItem>> AddWardrobeItem(WardrobeItem wardrobeItem)
         {
-            _wardrobeItems.Add(wardrobeItem);
-            return Ok(_wardrobeItems);
+            return Ok(_wardrobeItemRepository.AddWardrobeItem(wardrobeItem));
         }
     }
 }
