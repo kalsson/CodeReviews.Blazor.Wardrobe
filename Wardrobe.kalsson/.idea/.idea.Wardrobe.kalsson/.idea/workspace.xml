@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Remove WeatherForecast API and add WardrobeItem entity.&#10;&#10;The WeatherForecast API and related structures were removed as they are no longer needed. Introduced a new `WardrobeItem` entity to the shared project for better alignment with the application's domain. Updated project files to reflect these changes and ensure proper organization.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Wardrobe.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Wardrobe.API.csproj" afterDir="false" />
+    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add WardrobeItem API controller and update project dependencies.&#10;&#10;Introduced `WardrobeItemController` with a basic GET endpoint to retrieve a list of mock wardrobe items. Added a new NuGet package reference for `Microsoft.VisualStudio.Web.CodeGeneration.Design` to support scaffolding. Updated project and IDE configurations to align with the new changes.">
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720984545897</updated>
-      <workItem from="1741592024594" duration="7006000" />
+      <workItem from="1741592024594" duration="7349000" />
     </task>
     <task id="LOCAL−00001" summary="Initialize Wardrobe.API project with basic setup.&#10;&#10;Added .NET 8.0 project files, launch settings, example API controller, and an initial WeatherForecast implementation. Included Swagger for API documentation and configured development and production app settings. Project is set up to run locally with IIS Express or via HTTP/HTTPS.">
       <option name="closed" value="true" />
@@ -149,7 +148,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1741593536272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Add WardrobeItem API controller and update project dependencies.&#10;&#10;Introduced `WardrobeItemController` with a basic GET endpoint to retrieve a list of mock wardrobe items. Added a new NuGet package reference for `Microsoft.VisualStudio.Web.CodeGeneration.Design` to support scaffolding. Updated project and IDE configurations to align with the new changes.">
+      <option name="closed" value="true" />
+      <created>1741601542788</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1741601542788</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +169,7 @@
     <MESSAGE value="Add Wardrobe.Shared project and integrate it with API&#10;&#10;Introduced a new Wardrobe.Shared project to the solution with .NET 8.0 configuration. Updated Wardrobe.API to reference the shared project and reflect the changes in the solution file. Adjusted RunManager settings to align with the new setup." />
     <MESSAGE value="Refactor WeatherForecast namespace to Shared.Entities.&#10;&#10;Moved WeatherForecast from Wardrobe.API to Wardrobe.Shared.Entities to better align with shared project structure. Updated WeatherForecastController to reference the new namespace. This change improves code organization and supports modular project architecture." />
     <MESSAGE value="Remove WeatherForecast API and add WardrobeItem entity.&#10;&#10;The WeatherForecast API and related structures were removed as they are no longer needed. Introduced a new `WardrobeItem` entity to the shared project for better alignment with the application's domain. Updated project files to reflect these changes and ensure proper organization." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove WeatherForecast API and add WardrobeItem entity.&#10;&#10;The WeatherForecast API and related structures were removed as they are no longer needed. Introduced a new `WardrobeItem` entity to the shared project for better alignment with the application's domain. Updated project files to reflect these changes and ensure proper organization." />
+    <MESSAGE value="Add WardrobeItem API controller and update project dependencies.&#10;&#10;Introduced `WardrobeItemController` with a basic GET endpoint to retrieve a list of mock wardrobe items. Added a new NuGet package reference for `Microsoft.VisualStudio.Web.CodeGeneration.Design` to support scaffolding. Updated project and IDE configurations to align with the new changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add WardrobeItem API controller and update project dependencies.&#10;&#10;Introduced `WardrobeItemController` with a basic GET endpoint to retrieve a list of mock wardrobe items. Added a new NuGet package reference for `Microsoft.VisualStudio.Web.CodeGeneration.Design` to support scaffolding. Updated project and IDE configurations to align with the new changes." />
   </component>
 </project>

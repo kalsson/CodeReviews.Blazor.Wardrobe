@@ -37,5 +37,19 @@ namespace Wardrobe.API.Controllers
         {
             return Ok(_wardrobeItems);
         }
+
+        /// Adds a new wardrobe item to the collection.
+        /// <param name="wardrobeItem">
+        /// The wardrobe item to be added to the collection.
+        /// </param>
+        /// <returns>
+        /// The updated list of all wardrobe items including the newly added item.
+        /// </returns>
+        [HttpPost]
+        public ActionResult<List<WardrobeItem>> AddWardrobeItem(WardrobeItem wardrobeItem)
+        {
+            _wardrobeItems.Add(wardrobeItem);
+            return Ok(_wardrobeItems);
+        }
     }
 }
