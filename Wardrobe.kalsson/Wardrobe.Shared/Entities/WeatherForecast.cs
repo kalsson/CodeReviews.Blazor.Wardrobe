@@ -1,4 +1,4 @@
-namespace Wardrobe.API;
+namespace Wardrobe.Shared.Entities;
 
 public class WeatherForecast
 {

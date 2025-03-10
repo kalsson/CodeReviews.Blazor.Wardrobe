@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Wardrobe.Shared.Entities;
 
 namespace Wardrobe.API.Controllers;
 
