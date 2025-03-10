@@ -1,4 +1,5 @@
 using Wardrobe.API.Repositories;
+using Wardrobe.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped <IWardrobeItemRepository, WardrobeItemRepository>();
+builder.Services.AddScoped <IWardrobeItemService, WardrobeItemService>();
 
 var app = builder.Build();
 

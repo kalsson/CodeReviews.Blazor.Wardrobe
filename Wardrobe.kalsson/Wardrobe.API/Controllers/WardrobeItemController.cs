@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Wardrobe.API.Repositories;
+using Wardrobe.API.Services;
 using Wardrobe.Shared.Entities;
+using Wardrobe.Shared.Models.WardrobeItem;
 
 namespace Wardrobe.API.Controllers
 {
@@ -9,23 +11,23 @@ namespace Wardrobe.API.Controllers
     [ApiController]
     public class WardrobeItemController : ControllerBase
     {
-        private readonly IWardrobeItemRepository _wardrobeItemRepository;
+        private readonly IWardrobeItemService _wardrobeItemService;
 
-        public WardrobeItemController(IWardrobeItemRepository wardrobeItemRepository)
+        public WardrobeItemController(IWardrobeItemService wardrobeItemService)
         {
-            _wardrobeItemRepository = wardrobeItemRepository;
+            _wardrobeItemService = wardrobeItemService;
         }
         
         [HttpGet]
-        public ActionResult<List<WardrobeItem>> GetAllWardrobeItems()
+        public ActionResult<List<WardrobeItemResponse>> GetAllWardrobeItems()
         {
-            return Ok(_wardrobeItemRepository.GetAllWardrobeItems());
+            return Ok(_wardrobeItemService.GetAllWardrobeItems());
         }
         
         [HttpPost]
-        public ActionResult<List<WardrobeItem>> AddWardrobeItem(WardrobeItem wardrobeItem)
+        public ActionResult<List<WardrobeItemResponse>> AddWardrobeItem(WardrobeItemCreateRequest wardrobeItem)
         {
-            return Ok(_wardrobeItemRepository.AddWardrobeItem(wardrobeItem));
+            return Ok(_wardrobeItemService.AddWardrobeItem(wardrobeItem));
         }
     }
 }
