@@ -37,4 +37,14 @@ public class WardrobeItemService : IWardrobeItemService
         }
         return result.Adapt<List<WardrobeItemResponse>>();
     }
+
+    public List<WardrobeItemResponse>? DeleteWardrobeItem(int id)
+    {
+        var result = _wardrobeItemRepository.DeleteWardrobeItem(id);
+        if (result is null)
+        {
+            return null;
+        }
+        return result.Adapt<List<WardrobeItemResponse>>();
+    }
 }

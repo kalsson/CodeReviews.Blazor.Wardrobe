@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes.">
-      <change afterPath="$PROJECT_DIR$/Wardrobe.Shared/Models/WardrobeItem/WardrobeItemUpdateRequest.cs" afterDir="false" />
+    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add PUT endpoint to update wardrobe items&#10;&#10;Introduced an `UpdateWardrobeItem` method in the service, repository, and controller layers, enabling updates to wardrobe items via a new PUT endpoint. Added a `WardrobeItemUpdateRequest` model to manage update data. Handled cases where the item with the given ID does not exist, returning a 404 response.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wardrobe.API/Repositories/IWardrobeItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Repositories/IWardrobeItemRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wardrobe.API/Repositories/WardrobeItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Repositories/WardrobeItemRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wardrobe.API/Services/IWardrobeItemService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Services/IWardrobeItemService.cs" afterDir="false" />
@@ -131,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720984545897</updated>
-      <workItem from="1741592024594" duration="14123000" />
+      <workItem from="1741592024594" duration="15125000" />
     </task>
     <task id="LOCAL−00001" summary="Initialize Wardrobe.API project with basic setup.&#10;&#10;Added .NET 8.0 project files, launch settings, example API controller, and an initial WeatherForecast implementation. Included Swagger for API documentation and configured development and production app settings. Project is set up to run locally with IIS Express or via HTTP/HTTPS.">
       <option name="closed" value="true" />
@@ -189,7 +187,14 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1741606387192</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Add PUT endpoint to update wardrobe items&#10;&#10;Introduced an `UpdateWardrobeItem` method in the service, repository, and controller layers, enabling updates to wardrobe items via a new PUT endpoint. Added a `WardrobeItemUpdateRequest` model to manage update data. Handled cases where the item with the given ID does not exist, returning a 404 response.">
+      <option name="closed" value="true" />
+      <created>1741608705237</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1741608705237</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +212,7 @@
     <MESSAGE value="Add POST endpoint to WardrobeItemController&#10;&#10;Introduced a POST endpoint in `WardrobeItemController` to handle adding new wardrobe items to the collection. Updated project configuration files to reflect changes, ensuring proper alignment with the application's development setup." />
     <MESSAGE value="Add repository layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemRepository` and `WardrobeItemRepository` to manage wardrobe item data. Updated `WardrobeItemController` to use the repository, replacing in-memory data. Registered the repository in the service container for dependency injection." />
     <MESSAGE value="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes." />
+    <MESSAGE value="Add PUT endpoint to update wardrobe items&#10;&#10;Introduced an `UpdateWardrobeItem` method in the service, repository, and controller layers, enabling updates to wardrobe items via a new PUT endpoint. Added a `WardrobeItemUpdateRequest` model to manage update data. Handled cases where the item with the given ID does not exist, returning a 404 response." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add PUT endpoint to update wardrobe items&#10;&#10;Introduced an `UpdateWardrobeItem` method in the service, repository, and controller layers, enabling updates to wardrobe items via a new PUT endpoint. Added a `WardrobeItemUpdateRequest` model to manage update data. Handled cases where the item with the given ID does not exist, returning a 404 response." />
   </component>
 </project>

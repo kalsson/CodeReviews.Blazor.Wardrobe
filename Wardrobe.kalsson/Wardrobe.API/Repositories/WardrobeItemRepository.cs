@@ -46,4 +46,15 @@ public class WardrobeItemRepository : IWardrobeItemRepository
         return _wardrobeItems;
         
     }
+
+    public List<WardrobeItem>? DeleteWardrobeItem(int id)
+    {
+        var itemToDelete = _wardrobeItems.FirstOrDefault(x => x.Id == id);
+        if (itemToDelete is null)
+        {
+            return null;
+        }
+        _wardrobeItems.Remove(itemToDelete);
+        return _wardrobeItems;
+    }
 }

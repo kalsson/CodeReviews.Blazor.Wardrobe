@@ -40,5 +40,16 @@ namespace Wardrobe.API.Controllers
             }
             return Ok(result);
         }
+
+        [HttpDelete("{id}")]
+        public ActionResult<List<WardrobeItemResponse>> DeleteWardrobeItem(int id)
+        {
+            var result = _wardrobeItemService.DeleteWardrobeItem(id);
+            if (result is null)
+            {
+                return NotFound("Wardrobe Item with the given ID not found.");
+            }
+            return Ok(result);
+        }
     }
 }
