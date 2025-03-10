@@ -34,4 +34,16 @@ public class WardrobeItemRepository : IWardrobeItemRepository
         _wardrobeItems.Add(wardrobeItem);
         return _wardrobeItems;
     }
+
+    public List<WardrobeItem>? UpdateWardrobeItem(int id, WardrobeItem wardrobeItem)
+    {
+        var itemToUpdateIndex = _wardrobeItems.FindIndex(x => x.Id == id);
+        if (itemToUpdateIndex == -1)
+        {
+            return null;
+        }
+        _wardrobeItems[itemToUpdateIndex] = wardrobeItem;
+        return _wardrobeItems;
+        
+    }
 }

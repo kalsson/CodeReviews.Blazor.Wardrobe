@@ -26,4 +26,15 @@ public class WardrobeItemService : IWardrobeItemService
         var result = _wardrobeItemRepository.AddWardrobeItem(newItem);
         return result.Adapt<List<WardrobeItemResponse>>();
     }
+
+    public List<WardrobeItemResponse>? UpdateWardrobeItem(int id, WardrobeItemUpdateRequest request)
+    {
+        var updatedItem = request.Adapt<WardrobeItem>();
+        var result = _wardrobeItemRepository.UpdateWardrobeItem(id, updatedItem);
+        if (result is null)
+        {
+            return null;
+        }
+        return result.Adapt<List<WardrobeItemResponse>>();
+    }
 }

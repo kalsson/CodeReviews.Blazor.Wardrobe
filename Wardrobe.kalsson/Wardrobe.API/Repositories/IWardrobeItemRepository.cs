@@ -6,4 +6,5 @@ public interface IWardrobeItemRepository
 {
     List<WardrobeItem> GetAllWardrobeItems();
     List<WardrobeItem> AddWardrobeItem(WardrobeItem wardrobeItem);
+    List<WardrobeItem>? UpdateWardrobeItem(int id, WardrobeItem wardrobeItem);
 }

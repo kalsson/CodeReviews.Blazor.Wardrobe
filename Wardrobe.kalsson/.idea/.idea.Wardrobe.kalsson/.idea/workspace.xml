@@ -9,15 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add repository layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemRepository` and `WardrobeItemRepository` to manage wardrobe item data. Updated `WardrobeItemController` to use the repository, replacing in-memory data. Registered the repository in the service container for dependency injection.">
-      <change afterPath="$PROJECT_DIR$/Wardrobe.API/Services/IWardrobeItemService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wardrobe.API/Services/WardrobeItemService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wardrobe.Shared/Models/WardrobeItem/WardrobeItemCreateRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wardrobe.Shared/Models/WardrobeItem/WardrobeItemResponse.cs" afterDir="false" />
+    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes.">
+      <change afterPath="$PROJECT_DIR$/Wardrobe.Shared/Models/WardrobeItem/WardrobeItemUpdateRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Wardrobe.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Wardrobe.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Repositories/IWardrobeItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Repositories/IWardrobeItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Repositories/WardrobeItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Repositories/WardrobeItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Services/IWardrobeItemService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Services/IWardrobeItemService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Services/WardrobeItemService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Services/WardrobeItemService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720984545897</updated>
-      <workItem from="1741592024594" duration="11625000" />
+      <workItem from="1741592024594" duration="14123000" />
     </task>
     <task id="LOCAL−00001" summary="Initialize Wardrobe.API project with basic setup.&#10;&#10;Added .NET 8.0 project files, launch settings, example API controller, and an initial WeatherForecast implementation. Included Swagger for API documentation and configured development and production app settings. Project is set up to run locally with IIS Express or via HTTP/HTTPS.">
       <option name="closed" value="true" />
@@ -183,7 +182,14 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1741604053162</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes.">
+      <option name="closed" value="true" />
+      <created>1741606387192</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1741606387192</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +206,7 @@
     <MESSAGE value="Add WardrobeItem API controller and update project dependencies.&#10;&#10;Introduced `WardrobeItemController` with a basic GET endpoint to retrieve a list of mock wardrobe items. Added a new NuGet package reference for `Microsoft.VisualStudio.Web.CodeGeneration.Design` to support scaffolding. Updated project and IDE configurations to align with the new changes." />
     <MESSAGE value="Add POST endpoint to WardrobeItemController&#10;&#10;Introduced a POST endpoint in `WardrobeItemController` to handle adding new wardrobe items to the collection. Updated project configuration files to reflect changes, ensuring proper alignment with the application's development setup." />
     <MESSAGE value="Add repository layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemRepository` and `WardrobeItemRepository` to manage wardrobe item data. Updated `WardrobeItemController` to use the repository, replacing in-memory data. Registered the repository in the service container for dependency injection." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add repository layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemRepository` and `WardrobeItemRepository` to manage wardrobe item data. Updated `WardrobeItemController` to use the repository, replacing in-memory data. Registered the repository in the service container for dependency injection." />
+    <MESSAGE value="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes." />
   </component>
 </project>

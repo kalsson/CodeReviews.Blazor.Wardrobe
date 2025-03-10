@@ -29,5 +29,16 @@ namespace Wardrobe.API.Controllers
         {
             return Ok(_wardrobeItemService.AddWardrobeItem(wardrobeItem));
         }
+        
+        [HttpPut("{id}")]
+        public ActionResult<List<WardrobeItemResponse>> UpdateWardrobeItem(int id, WardrobeItemUpdateRequest wardrobeItem)
+        {
+            var result = _wardrobeItemService.UpdateWardrobeItem(id, wardrobeItem);
+            if (result is null)
+            {
+                return NotFound("Wardrobe Item with the given ID not found.");
+            }
+            return Ok(result);
+        }
     }
 }
