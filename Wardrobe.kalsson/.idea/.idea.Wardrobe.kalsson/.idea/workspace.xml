@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add DELETE endpoint to remove wardrobe items&#10;&#10;Implemented a DELETE endpoint in the controller, along with corresponding service and repository methods, to handle the deletion of wardrobe items by ID. Returns a 404 response if the item is not found. Updated all relevant interfaces and classes to support the new functionality.">
+    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add GET endpoint to fetch wardrobe item by ID&#10;&#10;Introduced a `GetWardrobeItemById` method in the controller, service, and repository layers to enable retrieval of a specific wardrobe item by its ID. Updated relevant interfaces and provided error handling for non-existent items, returning a 404 response when appropriate. Enhanced API functionality and improved usability.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Controllers/WardrobeItemController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Repositories/IWardrobeItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Repositories/IWardrobeItemRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Repositories/WardrobeItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Repositories/WardrobeItemRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720984545897</updated>
-      <workItem from="1741592024594" duration="15868000" />
+      <workItem from="1741592024594" duration="17079000" />
     </task>
     <task id="LOCAL−00001" summary="Initialize Wardrobe.API project with basic setup.&#10;&#10;Added .NET 8.0 project files, launch settings, example API controller, and an initial WeatherForecast implementation. Included Swagger for API documentation and configured development and production app settings. Project is set up to run locally with IIS Express or via HTTP/HTTPS.">
       <option name="closed" value="true" />
@@ -200,7 +197,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1741617137440</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Add GET endpoint to fetch wardrobe item by ID&#10;&#10;Introduced a `GetWardrobeItemById` method in the controller, service, and repository layers to enable retrieval of a specific wardrobe item by its ID. Updated relevant interfaces and provided error handling for non-existent items, returning a 404 response when appropriate. Enhanced API functionality and improved usability.">
+      <option name="closed" value="true" />
+      <created>1741618277775</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1741618277775</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +224,7 @@
     <MESSAGE value="Add service layer to WardrobeItemController&#10;&#10;Introduced `IWardrobeItemService` and `WardrobeItemService` to decouple business logic from the controller. Updated the controller to use the new service and added Mapster for model mapping. Adjusted dependency injection setup and project files to support these changes." />
     <MESSAGE value="Add PUT endpoint to update wardrobe items&#10;&#10;Introduced an `UpdateWardrobeItem` method in the service, repository, and controller layers, enabling updates to wardrobe items via a new PUT endpoint. Added a `WardrobeItemUpdateRequest` model to manage update data. Handled cases where the item with the given ID does not exist, returning a 404 response." />
     <MESSAGE value="Add DELETE endpoint to remove wardrobe items&#10;&#10;Implemented a DELETE endpoint in the controller, along with corresponding service and repository methods, to handle the deletion of wardrobe items by ID. Returns a 404 response if the item is not found. Updated all relevant interfaces and classes to support the new functionality." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add DELETE endpoint to remove wardrobe items&#10;&#10;Implemented a DELETE endpoint in the controller, along with corresponding service and repository methods, to handle the deletion of wardrobe items by ID. Returns a 404 response if the item is not found. Updated all relevant interfaces and classes to support the new functionality." />
+    <MESSAGE value="Add GET endpoint to fetch wardrobe item by ID&#10;&#10;Introduced a `GetWardrobeItemById` method in the controller, service, and repository layers to enable retrieval of a specific wardrobe item by its ID. Updated relevant interfaces and provided error handling for non-existent items, returning a 404 response when appropriate. Enhanced API functionality and improved usability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GET endpoint to fetch wardrobe item by ID&#10;&#10;Introduced a `GetWardrobeItemById` method in the controller, service, and repository layers to enable retrieval of a specific wardrobe item by its ID. Updated relevant interfaces and provided error handling for non-existent items, returning a 404 response when appropriate. Enhanced API functionality and improved usability." />
   </component>
 </project>
