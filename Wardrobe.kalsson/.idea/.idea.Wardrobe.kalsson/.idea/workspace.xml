@@ -5,16 +5,40 @@
     <projectFile profileName="http">Wardrobe.API/Wardrobe.API.csproj</projectFile>
     <projectFile profileName="https">Wardrobe.API/Wardrobe.API.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Add Wardrobe.Shared project and integrate it with API&#10;&#10;Introduced a new Wardrobe.Shared project to the solution with .NET 8.0 configuration. Updated Wardrobe.API to reference the shared project and reflect the changes in the solution file. Adjusted RunManager settings to align with the new setup." />
+    <list default="true" id="23051107-8780-4ed5-bae4-6eeb45b5810f" name="Changes" comment="Refactor WeatherForecast namespace to Shared.Entities.&#10;&#10;Moved WeatherForecast from Wardrobe.API to Wardrobe.Shared.Entities to better align with shared project structure. Updated WeatherForecastController to reference the new namespace. This change improves code organization and supports modular project architecture.">
+      <change afterPath="$PROJECT_DIR$/Wardrobe.Shared/Entities/WardrobeItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wardrobe.kalsson/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Wardrobe.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Wardrobe.API/Wardrobe.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.API/Wardrobe.API.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wardrobe.Shared/Entities/WeatherForecast.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet." root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -94,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720984545897</updated>
-      <workItem from="1741592024594" duration="329000" />
+      <workItem from="1741592024594" duration="1413000" />
     </task>
     <task id="LOCAL−00001" summary="Initialize Wardrobe.API project with basic setup.&#10;&#10;Added .NET 8.0 project files, launch settings, example API controller, and an initial WeatherForecast implementation. Included Swagger for API documentation and configured development and production app settings. Project is set up to run locally with IIS Express or via HTTP/HTTPS.">
       <option name="closed" value="true" />
@@ -110,17 +134,26 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1741592346780</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Refactor WeatherForecast namespace to Shared.Entities.&#10;&#10;Moved WeatherForecast from Wardrobe.API to Wardrobe.Shared.Entities to better align with shared project structure. Updated WeatherForecastController to reference the new namespace. This change improves code organization and supports modular project architecture.">
+      <option name="closed" value="true" />
+      <created>1741592413160</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1741592413160</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initialize Wardrobe.API project with basic setup.&#10;&#10;Added .NET 8.0 project files, launch settings, example API controller, and an initial WeatherForecast implementation. Included Swagger for API documentation and configured development and production app settings. Project is set up to run locally with IIS Express or via HTTP/HTTPS." />
     <MESSAGE value="Add Wardrobe.Shared project and integrate it with API&#10;&#10;Introduced a new Wardrobe.Shared project to the solution with .NET 8.0 configuration. Updated Wardrobe.API to reference the shared project and reflect the changes in the solution file. Adjusted RunManager settings to align with the new setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Wardrobe.Shared project and integrate it with API&#10;&#10;Introduced a new Wardrobe.Shared project to the solution with .NET 8.0 configuration. Updated Wardrobe.API to reference the shared project and reflect the changes in the solution file. Adjusted RunManager settings to align with the new setup." />
+    <MESSAGE value="Refactor WeatherForecast namespace to Shared.Entities.&#10;&#10;Moved WeatherForecast from Wardrobe.API to Wardrobe.Shared.Entities to better align with shared project structure. Updated WeatherForecastController to reference the new namespace. This change improves code organization and supports modular project architecture." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor WeatherForecast namespace to Shared.Entities.&#10;&#10;Moved WeatherForecast from Wardrobe.API to Wardrobe.Shared.Entities to better align with shared project structure. Updated WeatherForecastController to reference the new namespace. This change improves code organization and supports modular project architecture." />
   </component>
 </project>

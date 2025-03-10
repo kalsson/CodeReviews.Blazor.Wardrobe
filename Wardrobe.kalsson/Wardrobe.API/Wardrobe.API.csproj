@@ -14,4 +14,8 @@
       <ProjectReference Include="..\Wardrobe.Shared\Wardrobe.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
 </Project>
